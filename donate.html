@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button onclick="toggleNavbar()">Toggle Navbar</button>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <button class="nav-button" onclick="payWithRazorpay()">Pay with Razorpay</button>
+            <button class="nav-button" onclick="payWithUPI('phonepe')">Pay with PhonePe</button>
+            <button class="nav-button" onclick="payWithUPI('gpay')">Pay with Google Pay</button>
+        </div>
+    </nav>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
